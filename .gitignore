@@ -1,0 +1,37 @@
+# ─────────────────────────────────────────
+# PentestAutomator — .gitignore
+# ─────────────────────────────────────────
+
+# AI config (contains API keys — NEVER commit this)
+.ai_config
+
+# Scan reports and output (can be huge + sensitive)
+reports/
+
+# Wordlists (usually sourced from system or seclists)
+wordlists/*.txt
+!wordlists/.gitkeep
+
+# OS junk
+.DS_Store
+Thumbs.db
+.directory
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temp files
+*.tmp
+*.bak
+*.log
+
+# Python (if any helper scripts added later)
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
